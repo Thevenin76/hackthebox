@@ -7,16 +7,36 @@
 # 4. Run as fast as you can with your rooter o mobile phone.  The internet connection is now faster.
 
 # Config section
-HOST=157.245.32.36
 PAGE="/"
-PORT=30398
+
+if [[ $1 = "-h" && $3 = "-p" && $# -eq 4 ]]; then
+	HOST=$2
+	PORT=$4
+else
+	echo  "Usage ./boom -h <host> -p <port>"
+	exit 1
+fi
+
+
 PROMPT="boom@$HOST$"
 
 echo -n "$PROMPT "
+
+function clear(){
+   printf "\033[2J"
+   printf "\033[0;0H"
+   echo -n "$PROMPT "
+}
+
+trap clear SIGINT
+
+
 read CMD 
 
 while [ true ];
 do
+
+
 
 	if [[ $CMD = "quit" ]]; then
 		exit
